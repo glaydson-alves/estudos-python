@@ -12,6 +12,8 @@ for contador in range (2):
     playlist.append(musica.copy())
     musica.clear()
     
-    print(playlist)
-
+print(playlist)
+for linha in playlist:
+    for chave, valor in linha.items():
+        print(f"{chave}:artista={valor['artista']} duração={valor['duracao']}")
 
