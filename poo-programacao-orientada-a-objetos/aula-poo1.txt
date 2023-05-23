@@ -1,0 +1,18 @@
+"""
+ 1 - classes e objetos
+ 2 - encapsulamento
+ 3 - herança
+ 4 -  polimorfismo
+ 
+ classe -> atributos
+ pneu
+ porta
+ motor
+ chassi
+ 
+ método/comportamento
+ andar
+ fria
+ acelerar
+"""
+self significa a um Metodo
