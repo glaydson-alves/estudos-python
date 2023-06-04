@@ -31,9 +31,9 @@ class Filme:
         print(resultado, "\n")
         conexao.close()
 
-        # for itens in resultado:
-        #     print(f"código: {itens[1],}título: {itens[2]}, gênero: {itens[3]}, duração: {itens[4]}, classificaçao indicativa: {itens[5]}")
-        # print("\n")
+        for itens in resultado:
+            print(f"código: {itens[0]} | título: {itens[1]} | gênero: {itens[2]} | duração: {itens[3]} min | classificaçao indicativa: {itens[4]}")
+        print("\n")
 
 
 
