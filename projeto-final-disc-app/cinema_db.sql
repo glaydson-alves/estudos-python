@@ -7,6 +7,9 @@
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.0.25
 
+
+CREATE database cinema_db;
+use cinema_db;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";

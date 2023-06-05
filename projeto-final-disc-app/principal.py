@@ -23,8 +23,19 @@ while True:
         )
     elif menu == 2:
         f1.consultarFilme()
+        
     elif menu == 3:
-        f1.atualizarFilme()
+        print("Digite o número correspondente a opção que deseja atualizar ou Voltar ao Menu principal: ")
+        opcao = int(input( "1 - Título | 2 - Gênero | 3 - Duração | 4 - Classificação indicativa | 5 - Voltar\n"))      
+        if opcao == 1:
+            campo = "titulo"
+        elif opcao == 2:
+            campo = "gerero"
+        elif opcao == 4:
+            campo = "classificacao_indicativa"
+            valor = input(f"informe o(a) {campo} do Filme atualizado: ")
+            codigo = int(input("informe o código do Filme que deseja atualizar: "))
+            f1.atualizarFilme(campo, valor, codigo)
     elif menu == 4:
         f1.deletarFilme()
     elif menu == 5:
@@ -46,15 +57,3 @@ os.system("cls")
 
 
 
-
-
-# # codigo = int(input("Digite o código do Filme: "))
-# # titulo = input("Digite o título do Filme: ")
-# # genero = input("Digite o gênero do Filme: " )
-# # duracao = int(input("Digite a duração do Filme: "))
-# # classificacao_indicativa = int(input("Digite a classificação indicativa do Filme: "))
-
-# # cadastro = (codigo, titulo, genero, duracao,classificacao_indicativa)
-# #f1.cadastrarFilme(1,"Star Wars", "Fantasia científica",136,12)
-
-# f1.consultarFilme()
