@@ -58,4 +58,4 @@ class Filme:
         conexao.commit()
         print(consulta.rowcount, "atualizado com sucesso!\n")
         conexao.close()
-        
+    

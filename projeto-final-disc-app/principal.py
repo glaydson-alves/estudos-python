@@ -26,16 +26,18 @@ while True:
         
     elif menu == 3:
         print("Digite o número correspondente a opção que deseja atualizar ou Voltar ao Menu principal: ")
-        opcao = int(input( "1 - Título | 2 - Gênero | 3 - Duração | 4 - Classificação indicativa | 5 - Voltar\n"))      
+        opcao = int(input( "1 - Título | 2 - Gênero | 3 - Duração | 4 - Classificação indicativa\n"))      
         if opcao == 1:
             campo = "titulo"
         elif opcao == 2:
             campo = "gerero"
+        elif opcao == 3:
+            campo = "duracao"
         elif opcao == 4:
             campo = "classificacao_indicativa"
-            valor = input(f"informe o(a) {campo} do Filme atualizado: ")
-            codigo = int(input("informe o código do Filme que deseja atualizar: "))
-            f1.atualizarFilme(campo, valor, codigo)
+        valor = input(f"informe o(a) {campo} do Filme atualizado: ")
+        codigo = int(input("informe o código do Filme que deseja atualizar: "))
+        f1.atualizarFilme(campo, valor, codigo)
     elif menu == 4:
         f1.deletarFilme()
     elif menu == 5:
