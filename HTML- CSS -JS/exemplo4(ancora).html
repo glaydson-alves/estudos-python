@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Âncora</title>
+
+    <style>
+        *{scroll-behavior: smooth;} /*descida mais suave do scroll, comportamento do scroll*/
+
+        h1{text-align: center;} /* sans-serif = fonte sem frescurinha, com serif fonte com frescurinha*/
+        body{background-color: cornflowerblue;font-family: Helvetica, sans-serif;}
+
+        section{
+            background-color: navy; color: #fff; text-align: center; height: 100vh; 
+        }
+        /*height = altura, viewport heigth = vizualização da tela vh em porcentagem */
+        a{color: #fff; text-decoration: none;}
+        a :hover{color: crimson;}
+    
+    </style>
+</head>
+<body>
+    <h1 id="main">Trabalhando com Âncora</h1>
+    <a href="#secao1">ir para a seção 1</a> <br>
+    <a href="#secao2">ir para a seção 2</a> <br>
+    <a href="#secao3">ir para a seção 3</a> <br>
+    <a href="#secao4">ir para a seção 4</a> <br>
+
+
+        <!-- (origem)          destino
+            #variavél         id= -->
+    <section>
+        <h2 id="secao1">Seção 1</h2>
+    </section>
+
+    <section>
+        <h2 id="secao2">Seção 2</h2>
+        <a href="#main">voltar para o topo</a>
+    
+    </section>
+
+    <section>
+        <h2 id="secao3">Seção 3</h2>
+    </section>
+
+    <section>
+        <h2 id="secao4">Seção 4</h2>
+    </section>
+</body>
+</html>
