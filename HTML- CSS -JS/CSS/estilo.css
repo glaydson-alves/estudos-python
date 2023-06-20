@@ -8,6 +8,7 @@ section{width: 400px;}
 .bloco1 p{color:blueviolet;} /*formatando todas as tags P dentro da classe 'bloco1'*/
 .bloco1 > p{text-decoration: line-through; text-align: end;} /* esse seletor > irá selecionar todas as filhas diretas da tag mãe
 line-through= corta o texto*/
+/*.bloco1 > p somente as linhas diretas dentro da tag p dentro da classe serão afetadas*/
 .bloco1{ border:10px red solid;box-sizing: border-box; padding-top: 10; padding-bottom: 50px; }
 /*solid = concretiza a borda na cor escolhida*/
 
@@ -16,3 +17,8 @@ line-through= corta o texto*/
 /*FORMATANDO O BLOCO 2*/
 .bloco2{border: 2px solid green; padding: 40px;box-sizing: border-box;}
 /*box-sizing: border-box => irá alterar o comportamento padrão do dimensionamento do elemento HTML. De forma que quando aplicado border e padding, a estrutura não irá expandir. mas ficará com o mesmo tamanho, so que recalculado.*/
+
+.bloco2 + p{ /* + seletor adjacente, formata somente a tag <p> apos o bloco definido, no caso o bloco2*/
+    text-transform: uppercase; /*transformar todas tudo dentro da tag em maiusculo*/
+    color: olive;
+}
