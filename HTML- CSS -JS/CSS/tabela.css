@@ -1,0 +1,19 @@
+body{
+    font-family: Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+hr{
+    border: 2px solid green;
+}
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse:collapse;
+    padding: 10px;
+}
+
+table{
+    margin: 10px auto;
+} /*estamos centralizando a tabela usando margin auto para as laterais*/
